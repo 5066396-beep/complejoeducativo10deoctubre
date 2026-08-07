@@ -1,1 +1,19 @@
+intentos_maximos = 3
+intentos_realizados = 0
+conectado = False
 
+while intentos_realizados < intentos_maximos and not conectado:
+    intentos_realizados += 1
+    print(f"Intentando conexión... (Intento {intentos_realizados})")
+    
+    # Simulamos que la conexión falla (puedes cambiarlo a True para probar el éxito)
+    exito = False 
+    
+    if exito:
+        print("Conexión establecida con éxito.")
+        conectado = True
+    else:
+        print("Fallo en la conexión.")
+
+if not conectado:
+    print("Error total: No se pudo conectar tras 3 intentos.") 
